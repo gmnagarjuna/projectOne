@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --primary-color: #e9615e;
+    --secondary-color: #ec9956;
+    --extra-light: #f3f4f6;
+    --white:#ffffff;
+    --gradient-1: linear-gradient(to bottom right, #62393c, #181e41)
+    --gradient-2: linear-gradient(
+        to bottom,
+        var(--primary-color),
+        var(--secondary-color)
+    );
+    --max-width: 1200px;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.section__container {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: Srem 1rem;
+}
+
+.section__header {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.section__description{
+    max-width: 600;
+    margin-inline: auto;
+    color: var(--extra--light);
+    text-align: center;
+    line-height: 1.75rem;
+}
+
+.btn {
+    padding: .75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--white);
+    background-image: var(--gradient-2);
+    outline: none;
+    border: none;
+    border-radius: Srem;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+img{
+    width: 100%;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo{
+    display: inline-block;
+    padding: 1px 14px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--white);
+    background-image: var(--gradient-2);
+    border-radius: 100%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+html,body{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    color: var(--white);
+    background-image: var(--gradient-1);
+}
+
+nav{
+    position: fixed;
+    isolation: isolate;
+    top: 0;
+    width: 100%;
+    max-width: var(--max-width);
+    margin: auto;
+    z-index: 9;
+
+.nav__bar{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem; 
+    background-image: var(--gradient-1);
+}
+
+.nav__logo{
+    padding: 9px 12px;
+    font-size: 1rem;
+}
+
+.nav__bar a {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--white);
+}
+
+.nav__menu__btn{
+    font-size: 1.5rem;
+    color: var(--white);
+    cursor: pointer;
+}
+.nav__links{
+    list-style: none;
+    position: absolute;
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    background-image: var(--gradient-2);
+    /* transform: translateY(-100%); */
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.nav__links.open {
+    transform: translateY(0);
+}
+
+.nav__links a {
+    color: var(--white);
+    transition: 0.3s;
+}
+
+.btn__large{
+    display: none;
+}
