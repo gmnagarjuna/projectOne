@@ -11,20 +11,136 @@
     <nav>
         <div class="nav__bar">
             <a href="#"><span class="logo nav__logo">G</span>G M Nagarjuna</a>
-            <div class="nav__menu__btn menu__btn" id="menu__btn">
+            <div class="nav__menu__btn menu__btn" id="menu-btn">
                 <i class="ri-menu-3-line"></i>
             </div>
         </div>
-        <ul class="nav__links nav-links">
+        <ul class="nav__links nav-links" id="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#servics">Services</a></li>
+            <li><a href="#services">Services</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#contact" class="btn">Contact</a></li>
         </ul>
         <a href="#contact" class="btn btn__large">Contact</a>
     </nav>
-    <div class="div">
-    </div>
+    <header class="section__container header__container" id="home">
+        <div class="header__image">
+            <img src="assets/header.jpj.jpg" alt="G M Nagarjuna">
+        </div>
+        <div class="header__content">
+            <div>
+                <h1>G M Nagarjuna <br />User Interface <br />Designer</h1>
+            </div>
+        </div>
+        <p class="section__description">I am a user interface designer with a passion for creating visually stunning and user-friendly interfaces for web and mobile applications.
+        </p>
+        <div class="header__btn">
+            <button class="btn">Hire Me Now</button>
+        </div>
+        </header>
+        <section class="section__container about__container" id="about">
+        <div class="about__image">
+            <img src="/assets/background.jpg" alt="bg" class="about__bg-1"/>
+            <img src="/assets/background.jpg" alt="bg" class="about__bg-2"/>
+            <img src="/assets/about.jpg" alt="about" class="about__img"/>
+        </div>
+        <div class="about__content">
+            <h2 class="section__header">Bit About Me</h2>
+            <p class="section__description">
+                A passionate developer driven by curiosity and a constant desire to learn. With a deep love for coding, they enjoy crafting clean, efficient, and scalable solutions. Innovation and creativity are at the heart of everything they build. They thrive in collaborative environments and believe in the power of teamwork to bring ideas to life. Always exploring new technologies, they aim to make a meaningful impact through their work.
+            </p>
+            <div class="about__btn">
+                <button class="btn">Download CV</button>
+            </div>
+        </div>
+        </section>
+        <section class="section__container service__container" id="services">
+            <h2 class="section__header">My Best Services</h2>
+            <div class="service__grid">
+                <div class="service__card">
+                    <span><i class="ri-window-fill"></i></span>
+                    <h4>Website Design</h4>
+                    <p>Our web design service creates visually stunning, user-friendly websites tailored to your brand and goals. We focus on responsive design, fast load times, and intuitive navigation to enhance user experience and drive results.</p>
+                </div>
+                <div class="service__card">
+                    <span><i class="ri-store-line"></i></span>
+                    <h4>E-Commerce Solutions</h4>
+                    <p>Our eCommerce solutions help you build powerful, scalable online stores that drive sales and customer engagement. From product management to secure checkout, we provide everything you need for seamless online selling.</p>
+                </div>
+                <div class="service__card">
+                    <span><i class="ri-smartphone-line"></i></span>
+                    <h4>Mobile Development</h4>
+                    <p>Our mobile development service delivers high-performance apps tailored for iOS and Android platforms. We focus on sleek design, smooth functionality, and user-first experiences to bring your ideas to life on the go.</p>
+                </div>
+                <div class="service__card">
+                    <span><i class="ri-share-fill"></i></span>
+                    <h4>Content Marketing</h4>
+                    <p>Our content marketing service helps you attract, engage, and convert your audience with strategic, high-quality content. From blogs to social media, we craft messages that build trust and drive meaningful results.</p>
+                </div>
+                <div class="service__card">
+                    <span><i class="ri-seo-line"></i></span>
+                    <h4>SEO</h4>
+                    <p>SEO services enhance your online presence by optimizing websites for better search engine visibility. They include keyword research, content creation, technical improvements, and analytics to drive organic traffic and boost rankings.</p>
+                </div>
+                <div class="service__card">
+                    <span><i class="ri-share-circle-line"></i></span>
+                    <h4>Digital Marketing</h4>
+                    <p>Digital marketing services help businesses grow by leveraging online channels such as social media, email, search engines, and websites to promote products or services. These include strategies like SEO, content marketing, PPC, and analytics to maximize engagement and conversions.</p>
+                </div>
+            </div>
+        </section>
+        <section class="section__container portfolio" id="portfolio">
+            <h2 class="section__header">My Portfolio</h2>
+            <p class="section__description">Passionate about crafting innovative and impactful solutions, I bring creativity and precision to every project. With expertise in turning ideas into reality, my work aims to inspire and connect with people. Let’s collaborate to make something extraordinary!</p>
+            <div class="portfolio__grid">   
+                <div class="portfolio__card">
+                    <img src="assets/project1.jpg" alt="portfolio">
+                </div>
+                <div class="portfolio__card">
+                    <img src="assets/project2.jpg" alt="portfolio">
+                </div>
+                <div class="portfolio__card">
+                    <img src="assets/project3.jpg" alt="portfolio">
+                </div>
+                <div class="portfolio__card">
+                    <img src="assets/project4.jpg" alt="portfolio">
+                </div>
+                <div class="portfolio__card">
+                    <img src="assets/project5.jpg" alt="portfolio">
+                </div>
+                <div class="portfolio__card">
+                    <img src="assets/project6.jpg" alt="portfolio">
+                </div>
+            </div>
+            <div class="portfolio__banner">
+                <div class="portfolio__banner_card">
+                    <s><i class="ri-macbook-line"></i></s>
+                    <h4>150+ Projects</h4>
+                    <p>Delivered</p>
+                </div>
+                <div class="portfolio__banner_card">
+                    <s><i class="ri-discuss-line"></i></s>
+                    <h4>1500+ Happy</h4>
+                    <p>Customers</p>
+                </div>
+                <div class="portfolio__banner_card">
+                    <s><i class="ri-heart-fill"></i></s>
+                    <h4>2700+ Lovely</h4>
+                    <p>Feedbacks</p>
+                </div>
+            </div>
+        </section>
+        <section class="section__container contact__container" id="contact">
+            <div class="logo">G</div>
+            <h2 class="section__header">Let's Talk With Me!</h2>
+            <p class="section__description">I'm always open to discussing new projects, ideas, or opportunities. Let's connect and create something amazing together!</p>
+            <div class="contact__socials">
+                <a href="#"><i class="ri-instagram-line"></i></a>
+                <a href="#"><i class="ri-linkedin-fill"></i></a>
+            </div>
+        </section>
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="main.js"></script>
 </body>
-</html>
+</html>  
